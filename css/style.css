@@ -1,3 +1,11 @@
+/* CUSTOM PROPERTY */
+:root {
+  --accent-color: #000000;
+  --primary-color: #2e2e2e;
+  --font-family-bebas-neue: "Bebas Neue", "Arial", sans-serif;
+  --font-family-urbanist: "Urbanist", "Arial", sans-serif;
+}
+
 /* GLOBAL STYLES */
 
 *,
@@ -28,9 +36,67 @@ img {
 /* CONTAINER */
 
 .container {
+  border: 1px solid red;
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1400px;
+  height: 100vh;
+  max-height: 864px;
   margin: 0 auto;
+  font-style: normal;
+  display: flex;
+}
+
+.container section {
+  width: 50%;
+}
+
+/* REGISTER-FORM-WRAPPER */
+
+.register-form-wrapper {
+  padding: 45px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-title {
+  color: var(--accent-color);
+  font-size: 68px;
+  font-family: var(--font-family-bebas-neue);
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.register-form-subtitle {
+  color: var(--accent-color);
+  font-size: 20px;
+  font-family: var(--font-family-urbanist);
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 80px;
+}
+
+.register-form {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-form input {
+  width: 420px;
+  height: 52px;
+  padding: 20px 19px;
+  border-radius: 6px;
+  border: 1px solid #d2d2d2;
+  margin-bottom: 20px;
+}
+
+/* REGISTER-IMG-WRAPPER */
+
+.register-img {
+  height: 864px;
+  object-fit: contain;
 }

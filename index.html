@@ -4,12 +4,55 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>RUIX register form</title>
     <!-- Stylesheets -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue:regular"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Urbanist:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic"
+      rel="stylesheet"
+    />
   </head>
   <body>
+    <div class="container">
+      <section class="register-form-wrapper">
+        <h1 class="register-form-title">Welcome Ruix</h1>
+        <h2 class="register-form-subtitle">
+          Welcome to Ruix. dashboard Community
+        </h2>
+        <form
+          class="register-form"
+          action="https://htmlacademy.ru"
+          method="get"
+        >
+          <input
+            class="name-input"
+            type="text"
+            name="name-input"
+            placeholder="Name"
+          />
+          <input
+            class="email-input"
+            type="email"
+            name="email-input"
+            placeholder="Email"
+          />
+        </form>
+      </section>
+      <section class="register-img-wrapper">
+        <img
+          class="register-img"
+          src="img/register-form-img.png"
+          srcset="img/register-form-img.png 1x, img/register-form-img.png 2x"
+          alt="RUIX image"
+        />
+      </section>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
