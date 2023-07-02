@@ -67,7 +67,6 @@ img {
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
-  margin-bottom: 20px;
 }
 
 .register-form-subtitle {
@@ -134,6 +133,36 @@ img {
   font-family: var(--font-family-urbanist);
   font-weight: 500;
   line-height: normal;
+  margin-bottom: 40px;
+}
+
+.register-button:hover {
+  opacity: 0.8;
+}
+
+.register-button:active {
+  opacity: 0.6;
+}
+
+.log-in-button {
+  color: var(--accent-color);
+  font-size: 16px;
+  font-family: var(--font-family-urbanist);
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+}
+
+.log-in-button:hover {
+  opacity: 0.8;
+}
+
+.log-in-button:active {
+  opacity: 0.6;
+}
+
+.log-in-button span {
+  color: #fec00f;
 }
 
 /* REGISTER-IMG-WRAPPER */
