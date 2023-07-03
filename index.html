@@ -21,13 +21,12 @@
   <body>
     <div class="container">
       <section class="register-form-wrapper">
-        <div class="register-form-toggle">
-          <img
-            src="img/Logo.svg"
-            srcset="img/Logo.svg 1x, img/Logo@2x.svg 2x"
-            alt="RUIX logo"
-          />
-        </div>
+        <img
+          class="ruix-logo"
+          src="img/Logo.svg"
+          srcset="img/Logo.svg 1x, img/Logo@2x.svg 2x"
+          alt="RUIX logo"
+        />
         <h1 class="register-form-title">Welcome Ruix</h1>
         <h2 class="register-form-subtitle">
           Welcome to Ruix. dashboard Community
@@ -54,6 +53,22 @@
             type="password"
             name="password-input"
             placeholder="Password"
+          />
+          <select class="country-select" name="country-select">
+            <option value="uzbekistan">Uzbekistan</option>
+            <option value="usa">USA</option>
+            <option value="germany">Germany</option>
+            <option value="turkish">Turkish</option>
+            <option value="russia">Russia</option>
+            <option value="other">Other</option>
+          </select>
+          <input
+            class="country-input"
+            name="country-input"
+            placeholder="Country"
+            type="text"
+            disabled
+            required
           />
           <div class="remember-wrapper">
             <input

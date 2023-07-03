@@ -36,7 +36,6 @@ img {
 /* CONTAINER */
 
 .container {
-  border: 1px solid red;
   width: 100%;
   max-width: 1530px;
   height: 100vh;
@@ -60,22 +59,28 @@ img {
   justify-content: center;
 }
 
+.ruix-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
 .register-form-title {
   color: var(--accent-color);
-  font-size: 68px;
+  font-size: 62px;
   font-family: var(--font-family-bebas-neue);
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  margin: 0;
 }
 
 .register-form-subtitle {
   color: var(--accent-color);
-  font-size: 20px;
+  font-size: 18px;
   font-family: var(--font-family-urbanist);
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .register-form {
@@ -84,19 +89,29 @@ img {
   flex-direction: column;
 }
 
-.register-form > input {
+.register-form > input,
+.country-select,
+.country-select option {
   width: 420px;
-  height: 52px;
+  height: 48px;
   padding: 20px 19px;
   border-radius: 6px;
   border: 1px solid #d2d2d2;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   color: var(--primary-color);
   font-size: 16px;
   font-family: var(--font-family-urbanist);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.country-select {
+  padding: 14px 16px;
+}
+
+.country-input:disabled {
+  display: none;
 }
 
 .remember-wrapper {
@@ -133,7 +148,7 @@ img {
   font-family: var(--font-family-urbanist);
   font-weight: 500;
   line-height: normal;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .register-button:hover {
@@ -146,7 +161,7 @@ img {
 
 .log-in-button {
   color: var(--accent-color);
-  font-size: 16px;
+  font-size: 12px;
   font-family: var(--font-family-urbanist);
   font-weight: 400;
   line-height: normal;
