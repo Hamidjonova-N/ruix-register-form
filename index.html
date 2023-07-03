@@ -29,7 +29,7 @@
         />
         <h1 class="register-form-title">Welcome Ruix</h1>
         <h2 class="register-form-subtitle">
-          Welcome to Ruix. dashboard Community
+          Welcome to Ruix. Dashboard Community
         </h2>
         <form
           class="register-form"
@@ -41,18 +41,23 @@
             type="text"
             name="name-input"
             placeholder="Name"
+            required
           />
           <input
             class="email-input"
             type="email"
             name="email-input"
             placeholder="Email"
+            pattern="^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$"
+            required
           />
           <input
             class="password-input"
             type="password"
             name="password-input"
             placeholder="Password"
+            maxlength="8"
+            required
           />
           <select class="country-select" name="country-select">
             <option value="uzbekistan">Uzbekistan</option>

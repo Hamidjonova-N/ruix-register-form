@@ -96,14 +96,34 @@ img {
   height: 48px;
   padding: 20px 19px;
   border-radius: 6px;
-  border: 1px solid #d2d2d2;
+  border: 1px solid var(--accent-color);
   margin-bottom: 18px;
   color: var(--primary-color);
   font-size: 16px;
   font-family: var(--font-family-urbanist);
-  font-style: normal;
   font-weight: 400;
   line-height: normal;
+  outline: none;
+}
+
+.country-select {
+  border: 1px solid var(--accent-color);
+}
+
+.register-form > input:focus {
+  border: 1px solid #fec00f;
+}
+
+.register-form > input:valid {
+  border: 1px solid var(--accent-color);
+}
+
+.email-input:not(:placeholder-shown) {
+  border: 1px solid red;
+}
+
+.email-input:valid {
+  border: 1px solid var(--accent-color);
 }
 
 .country-select {
